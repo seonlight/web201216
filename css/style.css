@@ -41,12 +41,12 @@ header#hd{padding: 15px 0;}
           padding-left:2em; padding-bottom: 15px;
           background: yellow;}
 #gnb .d2{
-        display: none;
          background-color: black;  top:calc(100% + 15px); left: 15;
-         padding: 10px 15px; width: 100px;}
+         padding:0 15px; width: 100px; height:0;
+         transition: 0.5s; overflow: hidden;}
 #gnb .d2 a{font-size: 0.9em; line-height:1.5; color: white;}
 #gnb li:nth-child(1) .d2{left: 30px;}
-#gnb > li:hover .d2{display: block;}
+#gnb > li:hover .d2{ height: 120px;}
 
 
 section#main{}
