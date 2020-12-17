@@ -36,8 +36,10 @@ img{border: none;}
 header#hd{padding: 15px 0;}
 /*프로!!*/
 #hd a,#hd img{display: block;}
+#gnb>li{background: green; height:46px;}
 #gnb>li>a{font-size: 18px; line-height: 46px; font-weight: bold;
-          margin-left:2em;}
+          padding-left:2em; padding-bottom: 15px;
+          background: yellow;}
 #gnb .d2{
         display: none;
          background-color: black;  top:calc(100% + 15px); left: 15;
