@@ -33,21 +33,30 @@ img{border: none;}
 /*inspector 검수용 스타일은 스타일을 아주 구체적으로, !important까지 넣기*/
 .red{border-bottom: red 1px solid !important;}
 
+/*애니메이션 불가 DISPLAY 값 auto인것 -> keyframes도 안된다는 뜻
+
+}*/
+
 header#hd{padding: 15px 0;}
 /*프로!!*/
 #hd a,#hd img{display: block;}
-#gnb>li{background: green; height:46px;}
+#gnb>li{/*background: green;*/ height:46px;}
 #gnb>li>a{font-size: 18px; line-height: 46px; font-weight: bold;
           padding-left:2em; padding-bottom: 15px;
-          background: yellow;}
+        /*background: yellow;*/}
 #gnb .d2{
          background-color: black;  top:calc(100% + 15px); left: 15;
          padding:0 15px; width: 100px; height:0;
          transition: 0.5s; overflow: hidden;}
 #gnb .d2 a{font-size: 0.9em; line-height:1.5; color: white;}
-#gnb li:nth-child(1) .d2{left: 30px;}
-#gnb > li:hover .d2{ height: 120px;}
+#gnb .d2:before{content: ""; display: block; height: 15px;}
 
+#gnb li:nth-child(1) .d2{left: 30px;}
+
+/* 마우스가 올라간 대메뉴 li 속 소메뉴 d2의 높이가 120이 되라 */
+#gnb > li:hover .d2{ height: 120px;}
+/* 마우스가 올라간 대메뉴 li 속 대메뉴 d1의 색상 처리 */
+#gnb > li:hover >.d1{color:#009688 }
 
 section#main{}
 
